@@ -1,0 +1,12 @@
+# Node.js
+node_modules/
+npm-debug.log
+package-lock.json
+
+# Archivos temporales
+*.log
+*.tmp
+.DS_Store
+
+# Entorno
+.env

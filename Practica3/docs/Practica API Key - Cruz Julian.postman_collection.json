@@ -1,0 +1,316 @@
+{
+	"info": {
+		"_postman_id": "9afe7a21-8425-492e-a085-35c32ea4fb17",
+		"name": "Practica API Key - Cruz Julian",
+		"description": "Práctica de repaso, usando API Key",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49126020",
+		"_collection_link": "https://j-juliancl-8719490.postman.co/workspace/Jose-Julian-Cruz-Laparra's-Work~466de71f-2730-4fe0-8d52-6a8bb6965ad8/collection/49126020-9afe7a21-8425-492e-a085-35c32ea4fb17?action=share&source=collection_link&creator=49126020"
+	},
+	"item": [
+		{
+			"name": "Ejercicio 1 - Saludo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Julian Cruz\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/saludo",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"saludo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ejercicio 2 - Calculadora",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"a\": 10,\r\n  \"b\": 5,\r\n  \"operacion\": \"suma\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/calcular",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"calcular"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ejercicio 3 - Gestor de Tareas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"titulo\": \"Terminar práctica de APIs\",\r\n  \"completada\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/tareas",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"tareas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ejercicio 4 - Validador de Contraseñas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"password\": \"Contraseña123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/validar-password",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"validar-password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ejercicio 5 - Conversor de Temperatura",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"valor\": 100,\r\n  \"desde\": \"C\",\r\n  \"hacia\": \"F\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/convertir-temperatura",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"convertir-temperatura"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ejercicio 6 - Buscador en Array",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"array\": [1, 2, 3, 4, 5],\r\n  \"elemento\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/buscar",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"buscar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ejercicio 7 - Contador de Palabras",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"texto\": \"Hola mundo, hola Julian\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/contar-palabras",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"contar-palabras"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ejercicio 8 - Generador de Perfiles",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cantidad\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/generar-usuario",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"generar-usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ejercicio 9 - Sistema de Calificaciones",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"calificaciones\": [8, 9.5, 10, 7, 8.5]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/calcular-promedio",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"calcular-promedio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ejercicio 10 - API de Productos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Teclado MIDI\",\r\n  \"categoria\": \"Instrumentos\",\r\n  \"precio\": 2500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/productos",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"productos"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "{{apiKey}}",
+				"type": "string"
+			},
+			{
+				"key": "in",
+				"value": "header",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "x-api-key",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
